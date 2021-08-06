@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Start</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <p class="center">
+      <img
+        src="./tux.png"
+        width="150"
+        height="170"
+      />
+    </p>
+    <form id="form" role="search">
+      <input
+        type="search"
+        id="query"
+        name="q"
+        placeholder="Search..."
+      />
+    </form>
+    <script>
+      const f = document.getElementById("form");
+      const q = document.getElementById("query");
+      const search = "https://duckduckgo.com/?t=ffab&q=";
+
+      function submitted(event) {
+        event.preventDefault();
+        const url = search + q.value + "&ia=web";
+        window.open(url, "_self");
+      }
+
+      f.addEventListener("submit", submitted);
+    </script>
+    <div id="links">
+      <nav>
+        <ul>
+          <h2>General</h2>
+          <li><a href="https://reddit.com/">Reddit</a></li>
+          <li><a href="https://youtube.com/">Youtube</a></li>
+          <li><a href="https://twitter.com/">Twitter</a></li>
+          <li><a href="https://discord.com/app/">Discord</a></li>
+        </ul>
+      </nav>
+      <nav>
+        <ul>
+          <h2>Tech</h2>
+          <li><a href="https://github.com/">Github</a></li>
+          <li><a href="https://gitlab.com/gitlab-com">Gitlab</a></li>
+          <li><a href="https://stackoverflow.com/">Stack Overflow</a></li>
+          <li><a href="https://unix.stackexchange.com/">Unix Stackexchange</a></li>
+        </ul>
+      </nav>
+      <nav>
+        <ul>
+          <h2>Subreddits</h2>
+          <li><a href="https://reddit.com/r/linux/">r/linux</a></li>
+          <li><a href="https://reddit.com/r/unixporn/">r/unixporn</a></li>
+          <li><a href="https://www.reddit.com/r/linux_gaming/">r/linux_gaming</a></li>
+          <li><a href="https://reddit.com/r/archlinux/">r/archlinux</a></li>
+        </ul>
+      </nav>
+      <nav>
+        <ul>
+          <h2>Gaming</h2>
+          <li><a href="https://store.steampowered.com/">Steam</a></li>
+          <li><a href="https://www.epicgames.com/store/">Epic Games</a></li>
+          <li><a href="https://lutris.net/">Lutris</a></li>
+          <li><a href="https://www.roblox.com/">Roblox</a></li>
+        </ul>
+      </nav>
+      <nav>
+        <ul>
+          <h2>Arch Linux</h2>
+          <li><a href="https://aur.archlinux.org/">Arch User Repository</a></li>
+          <li><a href="https://archlinux.org/packages">Arch Official Repository</a></li>
+          <li><a href="https://wiki.archlinux.org/">Arch Wiki</a></li>
+          <li><a href="https://bbs.archlinux.org/">Arch Forum</a></li>
+        </ul>
+      </nav>
+    </div>
+  </body>
+</html>

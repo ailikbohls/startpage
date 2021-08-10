@@ -1,11 +1,11 @@
 html {
-    color: #d5d5d5;
-    font: 18px "Iosevka Nerd Font";
+    color: #bab2b9;
+    font: 18px "Ubuntu";
     height: 100%;
 }
 
 body {
-    background-color: #181e23;
+    background-color: #010109;
     padding: 300px;
 }
 
@@ -39,15 +39,15 @@ div {
 
 input {
     background-color: unset;
-    font: 16px "Iosevka Nerd Font";
-    color: #d5d5d5;
+    font: 16px "Ubuntu";
+    color: #bab2b9;
     height: 100%;
     width: 100%;
     border-top-style: hidden;
     border-right-style: hidden;
     border-left-style: hidden;
     border-bottom-style: solid;
-    border-bottom-color: #384149;
+    border-bottom-color: #827c81;
     text-align: center;
     margin-bottom: 50px;
 }
